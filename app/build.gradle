@@ -21,4 +21,10 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    /*CardView and ReciclerView*/
+    //compile 'com.android.support: cardview-v7:+'
+    //compile 'com.android.support: recycleriew-v7:+'
+    compile 'com.android.support:cardview-v7:+'
+    compile 'com.android.support:recyclerview-v7:+'
 }

@@ -41,11 +41,13 @@
 
         <ImageButton
             android:layout_marginTop="10dp"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:id="@+id/imageButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:elevation="4dp"
+            android:id="@+id/fab_I"
             android:background="@drawable/ripple"
-            android:src="@drawable/user_avatar" />
+            android:src="@drawable/user_avatar"
+            android:onClick="onClick"/>
 
     </LinearLayout>
 
