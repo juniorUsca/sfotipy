@@ -27,6 +27,8 @@ public class MyMusic extends Activity implements ActionBar.TabListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_music);
+
+
         setTabs();
 
         FragmentManager manager = getFragmentManager();

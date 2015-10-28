@@ -15,6 +15,9 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.parse.Parse;
+import com.parse.ParseInstallation;
+
 public class MainActivity extends Activity {
 
     public EditText editText;
@@ -25,6 +28,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         //Debug.startMethodTracing("calc");
         setContentView(R.layout.activity_main);
+
+        Parse.initialize(this, "MTsYGQ4pUbGxH8jghQmmk0AOXGZDPp6W073EpXaJ", "FxTwQGBlgtdyvnd0r6dVM2NBjlej2xyeoCmKXphO");
+        ParseInstallation.getCurrentInstallation().saveInBackground();
 
         int size = getResources().getDimensionPixelSize(R.dimen.fab_size);
         Outline outline = new Outline();
